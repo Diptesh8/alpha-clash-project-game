@@ -1,8 +1,11 @@
 
-
+/* popins url import link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-
+/* anton url import link */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+ 
+/* popins class */
 .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -20,3 +23,11 @@
   font-weight: 600;
   font-style: normal;
 }
+
+/* anton font class  */
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
