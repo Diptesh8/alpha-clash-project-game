@@ -6,3 +6,12 @@ function play(){
     const alphaPlayGround =document.getElementById('playground')
     alphaPlayGround.classList.remove('hidden');
 }
+
+function continueGame(){
+// generate random alphabet
+const alphabet = getARandomAlphabet()
+}
+
+function play(){
+    continueGame()
+}
