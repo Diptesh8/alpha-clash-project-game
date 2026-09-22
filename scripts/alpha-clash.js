@@ -1,3 +1,8 @@
 function play(){
-    console.log('play start now');
+    // step1:=press thebutton and hide home section
+    const homeScreen = document.getElementById('home-screen');
+    homeScreen.classList.add('hidden')
+    // step2:= show the alpha playground
+    const alphaPlayGround =document.getElementById('playground')
+    alphaPlayGround.classList.remove('hidden');
 }
