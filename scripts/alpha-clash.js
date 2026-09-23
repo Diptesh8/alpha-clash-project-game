@@ -7,12 +7,14 @@
 //     alphaPlayGround.classList.remove('hidden');
 // }
 
-// function continueGame(){
-// // generate random alphabet
-// const alphabet = getARandomAlphabet()
-// }
+function continueGame(){
+// generate random alphabet
+const alphabet =getARandomAlphabet();
+console.log('your random alphabet',alphabet);
+}
 
 function play(){
     hideElimentById('home-screen');
     visibleElimentById('playground');
+    continueGame();
 }
