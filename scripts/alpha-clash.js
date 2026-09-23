@@ -14,4 +14,5 @@
 
 function play(){
     hideElimentById('home-screen');
+    visibleElimentById('playground');
 }
