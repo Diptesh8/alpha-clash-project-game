@@ -12,6 +12,6 @@
 // const alphabet = getARandomAlphabet()
 // }
 
-// function play(){
-//     continueGame()
-// }
+function play(){
+    hideElimentById('home-screen');
+}
