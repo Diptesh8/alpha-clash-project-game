@@ -12,6 +12,8 @@ function handleKeyboardButtonPress(event){
     // checked the alphabet matched or not
     if(playerPressed === expectedLowercase){
         console.log("you get a point");
+        continueGame();
+        offBackgroundColorById(expectedLowercase);
     }
     else{
         console.log('you lost a life');
