@@ -6,6 +6,14 @@
 //     const alphaPlayGround =document.getElementById('playground')
 //     alphaPlayGround.classList.remove('hidden');
 // }
+ 
+function handleKeyboardButtonPress(){
+    console.log('button pressed');
+}
+
+// capture keyboard callback function-
+
+document.addEventListener('keyup', handleKeyboardButtonPress)
 
 function continueGame(){
 // generate random alphabet
@@ -23,5 +31,5 @@ setBackgroundColorById(alphabet);
 function play(){
     hideElimentById('home-screen');
     visibleElimentById('playground');
-    continueGame('current-alphabet');
+    continueGame();
 }
