@@ -15,6 +15,9 @@ console.log('your random alphabet',alphabet);
 // set randomly generated alphabet to the screen (show it)---------
 const currentAlphabet =document.getElementById('current-alphabet');
 currentAlphabet.innerText =alphabet;
+
+// set background color using random generated alphbet --------
+setBackgroundColorById(alphabet);
 }
 
 function play(){
