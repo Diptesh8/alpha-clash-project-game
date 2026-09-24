@@ -1,14 +1,21 @@
-// function play(){
-//     // step1:=press thebutton and hide home section
-//     const homeScreen = document.getElementById('home-screen');
-//     homeScreen.classList.add('hidden')
-//     // step2:= show the alpha playground
-//     const alphaPlayGround =document.getElementById('playground')
-//     alphaPlayGround.classList.remove('hidden');
-// }
+
  
-function handleKeyboardButtonPress(){
-    console.log('button pressed');
+function handleKeyboardButtonPress(event){
+    const playerPressed =event.key;
+    console.log('player pressed',playerPressed);
+
+    // get the expected to press---
+    const currentAlphabetElement = document.getElementById('current-alphabet');
+    const currentAlphabet =currentAlphabetElement.innerText;
+    const expectedLowercase =currentAlphabet.toLowerCase();
+    console.log(playerPressed,expectedLowercase);
+    // checked the alphabet matched or not
+    if(playerPressed === expectedLowercase){
+        console.log("you get a point");
+    }
+    else{
+        console.log('you lost a life');
+    }
 }
 
 // capture keyboard callback function-
