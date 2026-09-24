@@ -12,7 +12,7 @@ function visibleElimentById(elementId){
 
 function getARandomAlphabet(){
     // get or create an alphabet array
-    const alphabetString ='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const alphabetString ='abcdefghijklmnopqrstuvwxyz';
     const alphabets =alphabetString.split('');
     
     // get a random index between 0-25-----------
