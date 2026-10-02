@@ -90,11 +90,12 @@
 
         </section>
         <!-- score part------------- -->
-        <section class="score hidden">
+        <section id="final-score" class="score hidden">
             <div class="text-white flex flex-col justify-center items-center min-h-screen gap-4">
+                <h1 class="text-4xl">Game over!</h1>
                 <h1 class="text-8xl"><span class="font-extrabold">Score :</span> <span>14</span></h1>
                 <button
-                    class="btn btn-active btn-secondary font-semibold text-2xl bg-white text-black p-0.5 w-[175px] h-[65px]">Play
+                   id="play-Again" onclick="play()" class="btn btn-active btn-secondary font-semibold text-2xl bg-white text-black p-0.5 w-[175px] h-[65px]">Play
                     Again</button>
                 <p>Practice will make you Pro</p>
 

@@ -14,14 +14,14 @@ function handleKeyboardButtonPress(event){
         console.log("you get a point");
         // update score------
         //1. get the current score-------
-        const currentScoreElement = document.getElementById("current-score");
-        const currentScoreText = currentScoreElement.innerText;
-        const currentScore = parseInt(currentScoreText);
+        // const currentScoreElement = document.getElementById("current-score");
+        // const currentScoreText = currentScoreElement.innerText;
+        // const currentScore = parseInt(currentScoreText);
 
-        //2.  increase the score by 1---
-        const newScore =currentScore + 1;
-        // 3. show the update score
-        currentScoreElement.innerText = newScore;
+        // //2.  increase the score by 1---
+        // const newScore =currentScore + 1;
+        // // 3. show the update score
+        // currentScoreElement.innerText = newScore;
         // start a new round --------
         continueGame();
         offBackgroundColorById(expectedLowercase);
@@ -29,13 +29,13 @@ function handleKeyboardButtonPress(event){
     else{
         console.log('you lost a life');
         // 1. get the current life number--
-        const currentLifeScore =document.getElementById("life-score");
-        const currentLifeText =currentLifeScore.innerText
-        //2. reduce the life count-----
-        const updateScore =parseInt(currentLifeText);
-        const newUpdateScore = updateScore - 1;
-        // display the update life score
-        currentLifeScore.innerText =newUpdateScore;
+        // const currentLifeScore =document.getElementById("life-score");
+        // const currentLifeText =currentLifeScore.innerText
+        // //2. reduce the life count-----
+        // const updateScore =parseInt(currentLifeText);
+        // const newUpdateScore = updateScore - 1;
+        // // display the update life score
+        // currentLifeScore.innerText =newUpdateScore;
         if(newUpdateScore === 0){
             gameOver();
         }
@@ -61,6 +61,7 @@ setBackgroundColorById(alphabet);
 
 function play(){
     hideElimentById('home-screen');
+    hideElimentById('final-score');
     visibleElimentById('playground');
     continueGame();
 }

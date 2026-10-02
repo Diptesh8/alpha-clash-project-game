@@ -42,3 +42,13 @@ function offBackgroundColorById(elementId){
     const element=document.getElementById(elementId);
     element.classList.remove('bg-orange-400');
 }
+
+// function add a score number------------
+
+function getElementValueById(elementId){
+    const element = document.getElementById(elementId);
+    elementValueText =element.innerText;
+    const value =parseInt(elementValueText);
+    return value;
+
+}
