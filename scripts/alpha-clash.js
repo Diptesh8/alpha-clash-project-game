@@ -17,7 +17,6 @@ function handleKeyboardButtonPress(event){
         const currentScoreElement = document.getElementById("current-score");
         const currentScoreText = currentScoreElement.innerText;
         const currentScore = parseInt(currentScoreText);
-        console.log(currentScoreText);
 
         //2.  increase the score by 1---
         const newScore =currentScore + 1;
@@ -29,6 +28,14 @@ function handleKeyboardButtonPress(event){
     }
     else{
         console.log('you lost a life');
+        // 1. get the current life number--
+        const currentLifeScore =document.getElementById("life-score");
+        const currentLifeText =currentLifeScore.innerText
+        //2. reduce the life count-----
+        const updateScore =parseInt(currentLifeText);
+        const newUpdateScore = updateScore - 1;
+        // display the update life score
+        currentLifeScore.innerText =newUpdateScore;
     }
 }
 
