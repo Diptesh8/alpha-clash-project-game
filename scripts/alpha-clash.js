@@ -36,6 +36,9 @@ function handleKeyboardButtonPress(event){
         const newUpdateScore = updateScore - 1;
         // display the update life score
         currentLifeScore.innerText =newUpdateScore;
+        if(newUpdateScore === 0){
+            gameOver();
+        }
     }
 }
 
@@ -60,4 +63,11 @@ function play(){
     hideElimentById('home-screen');
     visibleElimentById('playground');
     continueGame();
+}
+
+// gameover function call--------
+
+function gameOver(){
+    hideElimentById('playground');
+    visibleElimentById('final-score');
 }

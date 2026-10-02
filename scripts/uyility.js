@@ -1,8 +1,11 @@
+// hidden function----------------
+
 function hideElimentById(elementId){
     const element = document.getElementById(elementId);
     element.classList.add('hidden');
 }
 
+// visible function ---------------------
 function visibleElimentById(elementId){
     const element = document.getElementById(elementId);
     element.classList.remove('hidden');
