@@ -15,7 +15,7 @@
         <!-- home  scren part-------- -->
         <section id="home-screen" class=" min-h-screen text-white flex flex-col  items-center justify-center ">
             <div class="flex flex-col justify-center items-center gap-10">
-                <h1 class="text-[170px] anton-regular uppercase">Alpha clash </h1>
+                <h1  class="text-[170px] anton-regular uppercase">Alpha clash </h1>
                 <p class="poppins-medium">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
                 <button onclick="play()"
                     class="poppins-semibold btn bg-white text-black w-[175px] h-[73px] font-semibold text-2xl">Play
@@ -72,15 +72,18 @@
                     </div>
                 </div>
                 <!-- keybord end -->
-                <!-- life scored -->
+                <!-- display life scored -->
                 <div class="flex justify-between w-3/4">
                     <button
                         class="btn btn-active btn-warning text-white bg-[#894189] rounded-[30px] w-[160px] h-[56px]">Life
                         <img src="./images/heart.svg">
-                        1</button>
+                        <span>1</span>
+                    </button>
+                        <!-- display score-- -->
                     <button
                         class="btn btn-active btn-warning text-white bg-[#360490] rounded-[30px] w-[160px] h-[56px]">score
-                        <img src="./images/doller.svg"> 1</button>
+                        <img src="./images/doller.svg"> <span id="current-score">0</span>
+                    </button>
 
                 </div>
             </div>
