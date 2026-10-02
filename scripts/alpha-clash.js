@@ -80,7 +80,8 @@ function play(){
     visibleElimentById('playground');
     // reset score and life value ---------
     setTextElementValueById('life-score',5);
-    getElementValueById('current-score',0);
+     setTextElementValueById('current-score',0);
+
     continueGame();
 }
 
@@ -89,4 +90,8 @@ function play(){
 function gameOver(){
     hideElimentById('playground');
     visibleElimentById('final-score');
+    // update final score--------
+    const lastScore =getElementValueById('current-score');
+    setTextElementValueById('game-score',lastScore);
+    
 }
