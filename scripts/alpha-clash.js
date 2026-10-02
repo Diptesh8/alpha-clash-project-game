@@ -5,7 +5,7 @@ function handleKeyboardButtonPress(event){
     console.log('player pressed',playerPressed);
 
     //if the user pressed Escape than the game is stop----
-    if(playerPressed === 'Escaped'){
+    if(playerPressed === 'Escape'){
         gameOver();
     } 
 
