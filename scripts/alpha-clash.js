@@ -12,6 +12,14 @@ function handleKeyboardButtonPress(event){
     // checked the alphabet matched or not
     if(playerPressed === expectedLowercase){
         console.log("you get a point");
+        const currentScore =getElementValueById('current-score');
+        console.log(currentScore);
+        const updatedScore = currentScore + 1;
+        setTextElementValueById('current-score' ,updatedScore)
+
+       
+       
+       
         // update score------
         //1. get the current score-------
         // const currentScoreElement = document.getElementById("current-score");
@@ -28,6 +36,12 @@ function handleKeyboardButtonPress(event){
     }
     else{
         console.log('you lost a life');
+
+        const currentValue = getElementValueById('life-score')
+        const updatedLife = currentValue - 1;
+        setTextElementValueById('life-score',updatedLife);
+
+
         // 1. get the current life number--
         // const currentLifeScore =document.getElementById("life-score");
         // const currentLifeText =currentLifeScore.innerText
@@ -36,7 +50,7 @@ function handleKeyboardButtonPress(event){
         // const newUpdateScore = updateScore - 1;
         // // display the update life score
         // currentLifeScore.innerText =newUpdateScore;
-        if(newUpdateScore === 0){
+        if(updatedLife === 0){
             gameOver();
         }
     }
