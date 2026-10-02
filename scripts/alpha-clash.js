@@ -4,6 +4,11 @@ function handleKeyboardButtonPress(event){
     const playerPressed =event.key;
     console.log('player pressed',playerPressed);
 
+    //if the user pressed Escape than the game is stop----
+    if(playerPressed === 'Escaped'){
+        gameOver();
+    } 
+
     // get the expected to press---
     const currentAlphabetElement = document.getElementById('current-alphabet');
     const currentAlphabet =currentAlphabetElement.innerText;
@@ -93,5 +98,10 @@ function gameOver(){
     // update final score--------
     const lastScore =getElementValueById('current-score');
     setTextElementValueById('game-score',lastScore);
+
+    // clear the last selected highlight alphabet-------
+    const alphabet =getElementTextById('current-alphabet')
+    offBackgroundColorById(alphabet);
+
     
 }
