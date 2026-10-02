@@ -12,6 +12,14 @@ function handleKeyboardButtonPress(event){
     // checked the alphabet matched or not
     if(playerPressed === expectedLowercase){
         console.log("you get a point");
+        // update score------
+        //1. get the current score-------
+        const currentScoreElement = document.getElementById("current-score");
+        const currentScoreText = currentScoreElement.innerText;
+        console.log(currentScoreText);
+
+        //2.  increase the score by 1---
+        // 3. show the update score
         continueGame();
         offBackgroundColorById(expectedLowercase);
     }
