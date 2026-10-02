@@ -16,10 +16,14 @@ function handleKeyboardButtonPress(event){
         //1. get the current score-------
         const currentScoreElement = document.getElementById("current-score");
         const currentScoreText = currentScoreElement.innerText;
+        const currentScore = parseInt(currentScoreText);
         console.log(currentScoreText);
 
         //2.  increase the score by 1---
+        const newScore =currentScore + 1;
         // 3. show the update score
+        currentScoreElement.innerText = newScore;
+        // start a new round --------
         continueGame();
         offBackgroundColorById(expectedLowercase);
     }
