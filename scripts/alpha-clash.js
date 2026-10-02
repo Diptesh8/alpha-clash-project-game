@@ -74,9 +74,13 @@ setBackgroundColorById(alphabet);
 }
 
 function play(){
+    // hide everithing show only the playground------
     hideElimentById('home-screen');
     hideElimentById('final-score');
     visibleElimentById('playground');
+    // reset score and life value ---------
+    setTextElementValueById('life-score',5);
+    getElementValueById('current-score',0);
     continueGame();
 }
 
